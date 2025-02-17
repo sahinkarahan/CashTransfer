@@ -1,0 +1,106 @@
+# EncodingAndFormatting
+
+Every file should use UTF-8 encoding.
+Maximum line length: 120 characters.
+Indent style: 4 spaces.
+Every file should end with a new line.
+Trailing whitespace should not be used.
+
+# ArchitectureAndDesign
+
+Use MVVM. Use the Core and Features structure. Create necessary folders.
+Prefer Swift 6, iOS 18, and Xcode 16.2 features.
+Use async/await for modern concurrency.
+Prefer dependency injection.
+Use the repository pattern.
+Implement proper dependency injection.
+Use SwiftUI, use UIKit only when necessary.
+The service layer should be protocol-oriented.
+Complex views should be broken into subviews (maximum 150 lines).
+Prefer modular and iterative structures to avoid code duplication.
+
+# UIAndUX
+
+Use foregroundStyle instead of foregroundColor.
+Add the Foundation, Swift, and SwiftUI libraries to the necessary files.
+Ensure that all necessary libraries are added and confirm their inclusion.
+Use clipShape(rect(CornerRadius:)) instead of CornerRadius.
+Use NavigationStack instead of NavigationView.
+Use @ViewBuilder when creating complex views.
+Use SF Symbols for icons.
+Provide support for Dark Mode and dynamic type.
+Use SafeArea and GeometryReader for layout.
+Support all screen sizes and orientations.
+Implement proper keyboard handling.
+Focus more on SwiftUI Animations to improve user experience.
+Create a preview for every view.
+
+# NamingAndStyle
+
+Enum cases should use lowerCamelCase.
+Struct and Class names should use UpperCamelCase.
+Protocol names should end with -able, -ible, or Protocol.
+Write view modifiers one per line.
+Use camelCase for vars/functions, PascalCase for types.
+Use verb forms for method names (e.g., fetchData).
+Use prefixes is, has, should for Booleans.
+Use clear, descriptive names following Apple's style.
+
+# MemoryAndPerformance
+
+Heavy operations should be done on a background thread.
+Use Instruments for memory leak detection.
+Implement pagination for large datasets.
+Use LazyVStack/LazyHStack for large lists.
+Sensitive data should be stored in the Keychain.
+Perform necessary validations for API requests.
+All network calls should be made using async/await.
+
+# ErrorHandlingAndValidation
+
+Do not use force unwrapping (!), prefer optional binding.
+Use early returns to avoid long if blocks.
+Handle errors using .alert.
+Check for potential errors early in functions and handle them with early returns.
+Use the Result type for errors.
+Date formats should be localized.
+Number formats should be localized.
+
+# CodeStructureAndClarity
+
+Use MARK to segment code.
+Add explanations for complex algorithms.
+Use protocol extensions for common code.
+Use @Published, @StateObject for state management.
+Use let over var.
+Prefer value types (structs) over classes.
+Follow Apple's Human Interface Guidelines.
+Use a strong type system and appropriate optionals.
+Use @Environment for environment variables.
+Define custom modifiers inside extensions.
+Use LocalizedStringKey for all strings.
+
+# DataAndSecurity
+
+Store sensitive data in the Keychain.
+Use CoreData for complex models.
+Use SwiftData for preferences.
+Follow a clean data flow architecture.
+Apply proper dependency injection.
+Implement proper data encryption for user data.
+API keys should be added to .gitignore.
+SSL pinning should be applied in the network layer.
+
+# UIResponsiveness
+
+Use .scaledFont for custom fonts.
+Implement pagination for large datasets.
+Support RTL (Right-to-Left) languages.
+
+# CodeQualityAndMaintenance
+
+Minimum iOS 18 support.
+Follow the latest Swift features and protocol-oriented programming.
+Use async/await for asynchronous operations.
+Follow Apple's documentation for a detailed app guide.
+Follow a clean data flow architecture.
